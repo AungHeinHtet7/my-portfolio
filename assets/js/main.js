@@ -136,3 +136,8 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.seti('selected-icon', getCurrentIcon())
 })
+
+/*==================== EXPORTS FOR TESTING ====================*/
+if (typeof module !== 'undefined') {
+    module.exports = { linkAction };
+}
