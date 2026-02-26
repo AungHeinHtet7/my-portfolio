@@ -1,0 +1,10 @@
+127.0.0.1 - - [26/Feb/2026 14:52:32] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2026 14:52:32] "GET /assets/css/swiper-bundle.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2026 14:52:32] "GET /assets/img/mmTech.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2026 14:52:32] "GET /assets/css/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2026 14:52:32] "GET /assets/img/aboutme.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2026 14:52:32] "GET /assets/img/keychron.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2026 14:52:32] "GET /assets/img/myKeyborad.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2026 14:52:32] "GET /assets/js/swiper-bundle.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2026 14:52:32] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2026 14:52:32] "GET /assets/img/profile.png HTTP/1.1" 200 -
