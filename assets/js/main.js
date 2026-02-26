@@ -136,3 +136,6 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.seti('selected-icon', getCurrentIcon())
 })
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { toggleSkills };
+}
