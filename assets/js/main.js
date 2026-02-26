@@ -101,12 +101,16 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 /*==================== SHOW SCROLL UP ====================*/
+const scrollUpElem = document.getElementById('scroll-up');
+
 function scrollUp() {
-    const scrollUp = document.getElementById('scroll-up')
-    if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
-    else scrollUp.classList.remove('show-scroll')
+    if (this.scrollY >= 560) scrollUpElem.classList.add('show-scroll');
+    else scrollUpElem.classList.remove('show-scroll')
 }
-window.addEventListener('scroll', scrollUp)
+
+if (scrollUpElem) {
+    window.addEventListener('scroll', scrollUp)
+}
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
