@@ -72,6 +72,13 @@ let swiper = new Swiper('.swiper', {
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]');
 
+// Cache the menu links
+const sectionLinks = {};
+sections.forEach(section => {
+    const sectionId = section.getAttribute('id');
+    sectionLinks[sectionId] = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+});
+
 function scrollActive() {
     const scrollY = window.pageYOffset;
 
@@ -80,12 +87,14 @@ function scrollActive() {
         const sectionTop = current.offsetTop - 50;
         const sectionId = current.getAttribute('id'); // Declare sectionId using const, let, or var
 
-        const menuLink = document.querySelector('.nav__menu a[href*=' + sectionId + ']'); // Select menu link
+        const menuLink = sectionLinks[sectionId]; // Use cached menu link
 
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            menuLink.classList.add('active-link'); // Add active-link class
-        } else {
-            menuLink.classList.remove('active-link'); // Remove active-link class
+        if (menuLink) {
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                menuLink.classList.add('active-link'); // Add active-link class
+            } else {
+                menuLink.classList.remove('active-link'); // Remove active-link class
+            }
         }
     });
 }
