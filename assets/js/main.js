@@ -134,5 +134,5 @@ themeButton.addEventListener('click', () => {
     themeButton.classList.toggle(iconTheme)
     //We save the theme and the current icon that the user choose
     localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.seti('selected-icon', getCurrentIcon())
+    localStorage.setItem('selected-icon', getCurrentIcon())
 })
